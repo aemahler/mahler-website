@@ -276,6 +276,10 @@
   /* ── About ── */
   .about-grid {
     display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid:has(.portrait) {
     grid-template-columns: 1fr 1.6fr;
     gap: 3.5rem;
     align-items: start;
@@ -284,17 +288,12 @@
   .portrait {
     aspect-ratio: 4 / 5;
     background: var(--bg-deep);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
     overflow: hidden;
   }
 
   .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .about-title { margin-bottom: 2rem; }
 
   .about-grid .prose p:first-child { margin-top: 0; }
 
@@ -346,7 +345,7 @@
   @media (max-width: 900px) {
     .section { grid-template-columns: 1fr; gap: 1.5rem; padding: 4.5rem var(--gutter); }
     .section > .eyebrow { padding-top: 0; }
-    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-grid, .about-grid:has(.portrait) { grid-template-columns: 1fr; gap: 2.5rem; }
     .portrait { max-width: 22rem; }
   }
 
@@ -540,15 +539,14 @@
   <section class="section" id="about" aria-labelledby="about-title">
     <p class="eyebrow"><span class="num">03</span>About</p>
     <div class="section-body">
-      <h2 class="lede" id="about-title" style="margin-bottom: 2.5rem;">Anthony Mahler</h2>
+      <h2 class="lede about-title" id="about-title">Anthony Mahler</h2>
       <div class="about-grid">
-        <div class="portrait">
-          <!-- Replace with: <img src="images/portrait.jpg" alt="Portrait of Anthony Mahler"> -->
-          Portrait
-        </div>
+        <!-- To add a portrait, put the photo at images/portrait.jpg and uncomment:
+        <div class="portrait"><img src="images/portrait.jpg" alt="Portrait of Anthony Mahler"></div>
+        -->
         <div class="prose">
           <p>Anthony Mahler is a translator and editor working from German into English. His translations have been published by academic presses, art publishers and museums, among them Routledge, De Gruyter, Hatje Cantz, Yale University Press and the Fondation Beyeler.</p>
-          <p>[Updated bio to come.]</p>
+          <p>He works mainly on books: full monographs, exhibition catalogues, and essays in art history, art theory, philosophy and literary studies, for authors, editors, museums and galleries who want an English text that reads as carefully as the original.</p>
           <dl class="languages">
             <dt>Languages</dt>
             <dd>German · English · French · Italian</dd>
@@ -563,8 +561,7 @@
     <p class="eyebrow"><span class="num">04</span>Contact</p>
     <div class="section-body">
       <h2 class="lede" id="contact-title">For new projects, a sample translation or a conversation about a manuscript, write to me directly.</h2>
-      <!-- TODO: confirm the address Anthony wants on the site -->
-      <a class="contact-email" href="mailto:contact@anthonymahler.ch">contact@anthonymahler.ch</a>
+      <a class="contact-email" href="mailto:anthony.mahler@gmail.com">anthony.mahler@gmail.com</a>
     </div>
   </section>
 
