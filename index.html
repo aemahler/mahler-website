@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthony Mahler | Translation & Editing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #f5f2ed;
+    --text: #1a1a1a;
+    --text-light: #6b6560;
+    --accent: #2c2824;
+    --band-height: 220px;
+    --band-gap: 14px;
+    --cover-gap: 14px;
+    --scroll-speed: 60s;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  .site-header {
+    padding: 2.5rem 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .site-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    color: var(--text);
+  }
+
+  .site-tagline {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-light);
+  }
+
+  /* ── Scrolling Bands ── */
+  .bands-container {
+    padding: 1rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--band-gap);
+    overflow: hidden;
+  }
+
+  .band {
+    display: flex;
+    width: max-content;
+    gap: var(--cover-gap);
+    will-change: transform;
+  }
+
+  .band--left {
+    animation: scroll-left var(--scroll-speed) linear infinite;
+  }
+
+  .band--right {
+    animation: scroll-right var(--scroll-speed) linear infinite;
+  }
+
+  .band:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* ── Cover Items ── */
+  .cover-link {
+    display: block;
+    flex-shrink: 0;
+    height: var(--band-height);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                filter 0.4s ease;
+  }
+
+  .cover-link:hover {
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  .cover-link img {
+    height: 100%;
+    width: auto;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.4s ease;
+  }
+
+  .cover-link:hover img {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  /* ── Divider ── */
+  .section-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--text-light);
+    margin: 3rem auto;
+    opacity: 0.4;
+  }
+
+  /* ── Placeholder for rest of site ── */
+  .below-fold {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 2rem 6rem;
+    text-align: center;
+  }
+
+  .below-fold p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--text-light);
+    font-style: italic;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    :root {
+      --band-height: 150px;
+      --band-gap: 10px;
+      --cover-gap: 10px;
+      --scroll-speed: 45s;
+    }
+
+    .site-header {
+      padding: 1.5rem 1.5rem 1rem;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .site-name { font-size: 1.5rem; }
+    .site-tagline { font-size: 0.75rem; }
+  }
+
+  @media (max-width: 480px) {
+    :root {
+      --band-height: 120px;
+      --scroll-speed: 40s;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-name">Anthony Mahler</div>
+  <div class="site-tagline">Translation &amp; Editing</div>
+</header>
+
+<section class="bands-container" aria-label="Published translations">
+
+  <!-- BAND 1 — Top tier, scrolls left -->
+  <div class="band band--left" id="band1">
+    <a class="cover-link" href="https://www.artbook.com/9783960987727.html" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_cc96cc4b11af435abad204cc8ed1ac84~mv2.jpg/v1/fill/w_372,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_cc96cc4b11af435abad204cc8ed1ac84~mv2.jpg" alt="Walter Moroder — Hatje Cantz" loading="lazy"></a>
+    <a class="cover-link" href="https://www.routledge.com/Opera-in-Performance-Analyzing-the-Performative-Dimension-of-Opera-Productions/Risi/p/book/9780367645021" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_58f089f44ef44f6695daf7b30c9db3be~mv2.jpg/v1/fill/w_420,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/risi.jpg" alt="Clemens Risi, Opera in Performance — Routledge" loading="lazy"></a>
+    <a class="cover-link" href="https://www.degruyter.com/document/doi/10.1515/9783110624519/html" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_e0f404fa3ba247acbf07e869c71f8d29~mv2.jpg/v1/fill/w_402,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/61F%2Blgq-58L.jpg" alt="Frauke Berndt, Facing Poetry — De Gruyter" loading="lazy"></a>
+    <a class="cover-link" href="https://www.hatjecantz.de/josef-albers-8362-0.html" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_56740a7b701940f291cf621d254218ca~mv2.png/v1/fill/w_470,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_56740a7b701940f291cf621d254218ca~mv2.png" alt="Josef Albers — Hatje Cantz / Yale" loading="lazy"></a>
+    <a class="cover-link" href="https://shop.fondationbeyeler.ch/en/artikel/jeff-wall-english-35085/35085" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_febb54a784c74c9ab3e43f2aede7a03c~mv2.webp/v1/fill/w_508,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_febb54a784c74c9ab3e43f2aede7a03c~mv2.webp" alt="Jeff Wall — Fondation Beyeler" loading="lazy"></a>
+    <a class="cover-link" href="https://verlag.koenigshausen-neumann.de/product/9783826078323-figures-of-pathos/" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_203976dff5514093b0ecafb29fb7f96a~mv2.webp/v1/fill/w_448,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_203976dff5514093b0ecafb29fb7f96a~mv2.webp" alt="Figures of Pathos — Königshausen & Neumann" loading="lazy"></a>
+    <a class="cover-link" href="https://link.springer.com/chapter/10.1057/978-1-349-95851-1_9" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_67497d4017c740aa84da422d6f3fac16~mv2.jpg/v1/fill/w_406,h_642,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/theissohn.jpg" alt="Militarizing Outer Space — Palgrave" loading="lazy"></a>
+  </div>
+
+  <!-- BAND 2 — Second tier, scrolls right -->
+  <div class="band band--right" id="band2">
+    <a class="cover-link" href="https://www.kulturverlag-kadmos.de/programm/details/unavailable" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_e0759c3ecb74466e9bb732dea6e17853~mv2.jpg/v1/fill/w_412,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_e0759c3ecb74466e9bb732dea6e17853~mv2.jpg" alt="Kadmos Verlag" loading="lazy"></a>
+    <a class="cover-link" href="https://www.kann-verlag.de/newrelease_SEHEN_2023.html" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_1131e5903421430598d2c1b2a730f279~mv2.jpg/v1/crop/x_437,y_342,w_2049,h_2858/fill/w_470,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_1131e5903421430598d2c1b2a730f279~mv2.jpg" alt="Sehen — Kann Verlag" loading="lazy"></a>
+    <a class="cover-link" href="https://www.axel-vervoordt.com/gallery/books/raimund-girke-between-white" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_6c07165697324d57a61473743291afc1~mv2.jpg/v1/fill/w_540,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_6c07165697324d57a61473743291afc1~mv2.jpg" alt="Raimund Girke — Axel Vervoordt" loading="lazy"></a>
+    <a class="cover-link" href="https://schwabe.ch/Georg-Kreis-Why-Italy-Was-for-Europe-978-3-7965-4264-0" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_56ff8a69c331436eb3cb552905fcf94f~mv2.jpg/v1/fill/w_422,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/wc_147671qNbUzimFiWcJ_305x445.jpg" alt="Georg Kreis — Schwabe" loading="lazy"></a>
+    <a class="cover-link" href="https://www.degruyter.com/document/doi/10.1515/9783110706109/html?lang=en" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_4a93c108f01c4ee180cb51e450692cfd~mv2.jpg/v1/fill/w_416,h_640,al_c,lg_1,q_80,enc_avif,quality_auto/product-1.jpg" alt="Luca Del Baldo — De Gruyter" loading="lazy"></a>
+    <a class="cover-link" href="https://www.journals.uchicago.edu/doi/abs/10.1086/709461" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_265d8392708843e2869b64392dbfae1d~mv2.jpg/v1/fill/w_508,h_642,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled.jpg" alt="RES: Anthropology and Aesthetics — U Chicago Press" loading="lazy"></a>
+  </div>
+
+  <!-- BAND 3 — Third tier, scrolls left -->
+  <div class="band band--left" id="band3">
+    <a class="cover-link" href="https://www.fink.de/view/title/53248" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_d6e9a7e6244942ee9d1207ff11a4ccbe~mv2.jpg/v1/fill/w_464,h_642,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/coverimage.jpg" alt="Enthüllen und Verbergen — Brill Fink" loading="lazy"></a>
+    <a class="cover-link" href="https://www.praesens.com/praesens-pro-presse/katalog/lichtspieler/" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_e2c3707ef9494dd5aae03e960e5f2999~mv2.jpg/v1/fill/w_412,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_e2c3707ef9494dd5aae03e960e5f2999~mv2.jpg" alt="Lichtspieler — Praesens" loading="lazy"></a>
+    <a class="cover-link" href="https://elibrary.narr.digital/journal/cg/53/4" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_dddc8a387a9b4199b82e3067f79ff30c~mv2.jpg/v1/fill/w_438,h_642,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cornelia_jp2.jpg" alt="Colloquia Germanica — Narr" loading="lazy"></a>
+    <a class="cover-link" href="https://lestanzedelvetro.org/en/product/das-meisterstuckmatthias-schaller/" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_98161ba419424b5da99746530d3d10b8~mv2.jpeg/v1/crop/x_26,y_15,w_506,h_651/fill/w_520,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/schaller.jpeg" alt="Matthias Schaller — Le Stanze del Vetro" loading="lazy"></a>
+    <a class="cover-link" href="http://www.bernhard-fuchs.net/monographs/fathom/" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_21268900dc7a43b3b4bca62cc7125396~mv2.jpg/v1/fill/w_608,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/51YZ8yUxN2L__SX472_BO1%2C204%2C203%2C200_.jpg" alt="Bernhard Fuchs, Fathom — Koenig Books" loading="lazy"></a>
+    <a class="cover-link" href="https://www.swissfilms.ch/de/movie/segnali-di-vita/5E38981A59AF4CF388EB1CCF96144011" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_840683f9129f4cb498c2599b127b331c~mv2.jpg/v1/fill/w_448,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_840683f9129f4cb498c2599b127b331c~mv2.jpg" alt="Segnali di vita — Swiss Films" loading="lazy"></a>
+  </div>
+
+  <!-- BAND 4 — Fourth tier, scrolls right -->
+  <div class="band band--right" id="band4">
+    <a class="cover-link" href="https://muse.jhu.edu/issue/35027" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_3110b7c678214b7bb173a9733d86350f~mv2.jpg/v1/fill/w_422,h_638,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/front_cover.jpg" alt="MLN — Johns Hopkins" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_1974a471765c421ca92cf7edc5014fc2.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_3b588b92fb1e406e969aec79f69dd1f7~mv2.jpg/v1/fill/w_426,h_640,al_c,lg_1,q_80,enc_avif,quality_auto/9783787334254.jpg" alt="Ambiguity in Contemporary Art — Felix Meiner" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_bbff6ded25f849dea58f14d79a7fc39e.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_42b0ad8fddde477d8592ba25a115b4d3~mv2.jpg/v1/crop/x_234,y_175,w_607,h_767/fill/w_512,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/url%3Dhttps_____scontent-waw1-1_cdninstagram_com__v__t51_2885-15__e35__43083222_566043903851.jpg" alt="Josef Albers: Interaction — Yale" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_07d4ed433eb249c99ebee66a22b9c8e2.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_cad062e13234454dbd561aa181431dd2~mv2.jpg/v1/fill/w_480,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/10_1515_zkg-2018-frontmatter3_jp2.jpg" alt="Zeitschrift für Kunstgeschichte" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_04948274e2a14acf9d22c805d19caf61.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_814edac63a4d4ea58902ad3ba310d9dd~mv2.jpg/v1/fill/w_426,h_638,al_c,lg_1,q_80,enc_avif,quality_auto/9781138906648.jpg" alt="Philosophy of Emotion — Routledge" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_05c90b1884ef4950a351264d80d5377b.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_d6cda88c50ce490e876a2647ab290c1e~mv2.jpg/v1/fill/w_506,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ciha_jp2.jpg" alt="CIHA — Germanisches Nationalmuseum" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_0335a7c080e9494a91c6a8952fbaa21d.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_0430082a323b480cb93e83f977a6d7b1~mv2.jpg/v1/fill/w_412,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_0430082a323b480cb93e83f977a6d7b1~mv2.jpg" alt="Sample translation" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_d77ecf33f3944b6694a5edf3d642f8f4.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_0ba546ee420f48cf860fbeb3fb0f4874~mv2.jpg/v1/fill/w_402,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_0ba546ee420f48cf860fbeb3fb0f4874~mv2.jpg" alt="Sample translation" loading="lazy"></a>
+    <a class="cover-link" href="https://www.anthonymahler.ch/_files/ugd/5838e8_a67d45d83c1842af9bcbec01aa59a4dc.pdf" target="_blank"><img src="https://static.wixstatic.com/media/5838e8_2bc12f19ddb44493854d1cadbb056b1c~mv2.jpg/v1/fill/w_434,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5838e8_2bc12f19ddb44493854d1cadbb056b1c~mv2.jpg" alt="Sample translation" loading="lazy"></a>
+  </div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<div class="below-fold">
+  <p>Services, about, and contact sections will follow here.</p>
+</div>
+
+<script>
+  // Duplicate band contents for seamless infinite scroll
+  document.querySelectorAll('.band').forEach(band => {
+    const items = band.innerHTML;
+    band.innerHTML = items + items;
+  });
+</script>
+
+</body>
+</html>
