@@ -27,6 +27,21 @@ pencil icon to edit it in the browser.
 - **Scrolling speed:** near the bottom, `const DRIFT_SPEED = 28;`
   (pixels per second; lower is slower).
 
+## Covers still loaded from the old Wix site
+
+These covers have no local image yet and are still loaded from Wix. They
+work while the Wix site is up; if an image can't be loaded, the page simply
+leaves that cover out. To bring one over, add the image to
+`images/covers/` and change its `src="…"` in `index.html`.
+
+- Band 1: Risi, *Opera in Performance*; Berndt, *Facing Poetry*;
+  *Josef Albers* (Hatje Cantz); Bernhard Fuchs, *Fathom*
+- Band 2: Matthias Schaller (Le Stanze del Vetro); *Figures of Pathos*;
+  Georg Kreis (Schwabe); De Gruyter title at DOI 10.1515/9783110706109
+- Band 3: *Ambiguity in Contemporary Art*; *RES*; *Philosophy of Emotion*;
+  *Enthüllen und Verbergen*; *Lichtspieler*; *Militarizing Outer Space*
+- Band 4: *MLN*; three PDF samples labelled "Sample translation"
+
 ## Putting it online (GitHub Pages, free)
 
 1. In this repository on GitHub, go to **Settings → Pages**.
