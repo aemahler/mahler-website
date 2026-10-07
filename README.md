@@ -8,8 +8,8 @@ The website of Anthony Mahler, translator and editor. It is a single page,
 | Path | What it is |
 | --- | --- |
 | `index.html` | The whole site: text, layout and the scrolling cover bands |
-| `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … `band4-09.jpg` |
-| `images/portrait.jpg` | Portrait for the About section (optional) |
+| `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by band and position |
+| `images/portrait.jpg` | Portrait for the About section |
 | `samples/` | PDF sample translations that some covers link to |
 | `PROJECT-BRIEF.md` | The design brief |
 
@@ -27,20 +27,27 @@ pencil icon to edit it in the browser.
 - **Scrolling speed:** near the bottom, `const DRIFT_SPEED = 28;`
   (pixels per second; lower is slower).
 
-## Covers still loaded from the old Wix site
+## Covers without a link yet
 
-These covers have no local image yet and are still loaded from Wix. They
-work while the Wix site is up; if an image can't be loaded, the page simply
-leaves that cover out. To bring one over, add the image to
-`images/covers/` and change its `src="…"` in `index.html`.
+These covers are shown but not clickable because no publisher page has been
+set. To add one, change `<span class="cover-link">…</span>` on that line to
+`<a class="cover-link" href="LINK" target="_blank" rel="noopener">…</a>`.
 
-- Band 1: Risi, *Opera in Performance*; Berndt, *Facing Poetry*;
-  *Josef Albers* (Hatje Cantz); Bernhard Fuchs, *Fathom*
-- Band 2: Matthias Schaller (Le Stanze del Vetro); *Figures of Pathos*;
-  Georg Kreis (Schwabe); De Gruyter title at DOI 10.1515/9783110706109
-- Band 3: *Ambiguity in Contemporary Art*; *RES*; *Philosophy of Emotion*;
-  *Enthüllen und Verbergen*; *Lichtspieler*; *Militarizing Outer Space*
-- Band 4: *MLN*; three PDF samples labelled "Sample translation"
+- *Van Gogh and the Stars*
+- *Master/s*
+- *Vincenzo Bellini on Stage and Screen*
+- *Textile Terms: A Glossary*
+- *What Images Do*
+- *Text as Source and Material in Contemporary Music Theatre*
+- caa.reviews
+- *Zeitschrift für Kunstgeschichte* 4.2019
+
+## Sample PDFs
+
+Some covers link to sample PDFs still hosted on the old Wix site
+(`https://www.anthonymahler.ch/_files/…`). Those links stop working once the
+domain moves. Before cancelling Wix, put the PDFs in `samples/` and point
+the covers' links there.
 
 ## Putting it online (GitHub Pages, free)
 
