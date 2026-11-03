@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anthony Mahler | Translation &amp; Editing</title>
+<title>Translation &amp; Editing by Anthony Mahler</title>
 <meta name="description" content="Anthony Mahler translates and edits books in art history, art theory, philosophy and the humanities, from German into English, for publishers, museums and scholars.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,30 +46,57 @@
 
   /* ── Header ── */
   .site-header {
-    padding: 2.5rem var(--gutter) 2rem;
+    padding: 2.5rem var(--gutter) 2.25rem;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     gap: 2rem;
   }
 
-  .site-name {
-    font-family: var(--serif);
-    font-weight: 300;
-    font-size: 2rem;
-    letter-spacing: 0.02em;
-    line-height: 1.1;
+  /* Wordmark: "Translation" / "& Editing" / "by Anthony Mahler".
+     Column 1 holds the indent and the ampersand; "Editing" and the
+     byline share column 2's left edge. Sizes are in em of --logo-size. */
+  .logo {
+    --logo-size: 3.9rem;
+    display: grid;
+    grid-template-columns: 2.35em auto;
+    font-size: var(--logo-size);
     color: var(--text);
     text-decoration: none;
   }
 
-  .site-tagline {
-    display: block;
-    margin-top: 0.35rem;
-    font-size: 0.85rem;
-    letter-spacing: 0.15em;
+  .logo-word {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.005em;
+  }
+
+  .logo-word--first { grid-column: 1 / -1; }
+
+  .logo-amp {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 0.6;
+    color: #958b80;
+    justify-self: end;
+    align-self: end;
+    margin-right: 0.1em;
+    transform: translateY(0.08em);
+  }
+
+  .logo-by {
+    grid-column: 2;
+    margin-top: 0.85rem;
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.24em;
     text-transform: uppercase;
-    color: var(--text-light);
+    color: #4a4540;
   }
 
   .site-nav { display: flex; gap: 2rem; }
@@ -99,6 +126,8 @@
     gap: var(--band-gap);
     overflow: hidden;
   }
+
+  .bands-caption { padding: 0.9rem var(--gutter) 0; }
 
   .band-row {
     overflow: hidden;
@@ -366,8 +395,9 @@
       gap: 1rem;
     }
 
-    .site-name { font-size: 1.5rem; }
-    .site-tagline { font-size: 0.75rem; }
+    .site-header { align-items: flex-start; gap: 1.5rem; }
+    .logo { --logo-size: 2.75rem; }
+    .logo-by { font-size: 0.75rem; margin-top: 0.6rem; }
     .site-nav { gap: 1.25rem; flex-wrap: wrap; }
     .services { grid-template-columns: 1fr; gap: 2.5rem; }
     .intro { padding: 3rem var(--gutter) 4rem; }
@@ -396,9 +426,11 @@
 <body>
 
 <header class="site-header">
-  <a class="site-name" href="#top" id="top">
-    Anthony Mahler
-    <span class="site-tagline">Translation &amp; Editing</span>
+  <a class="logo" href="#top" id="top" aria-label="Translation &amp; Editing by Anthony Mahler">
+    <span class="logo-word logo-word--first">Translation</span>
+    <span class="logo-amp" aria-hidden="true">&amp;</span>
+    <span class="logo-word">Editing</span>
+    <span class="logo-by">by Anthony Mahler</span>
   </a>
   <nav class="site-nav" aria-label="Main">
     <a href="#services">Services</a>
@@ -473,6 +505,8 @@
       <a class="cover-link" href="https://elibrary.narr.digital/journal/cg/53/4" target="_blank" rel="noopener"><img src="images/covers/band4-14.jpg" width="450" height="660" alt="Colloquia Germanica 53.4 — Narr Francke Attempto" decoding="async"></a>
     </div>
   </div>
+
+  <p class="eyebrow bands-caption">Published translations</p>
 
 </section>
 <main>
