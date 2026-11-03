@@ -26,7 +26,7 @@ pencil icon to edit it in the browser.
 - **Change where a cover links:** edit the `href="…"` on that line.
 - **Text:** the Services, About and Contact sections are marked with
   comments such as `<!-- ── Services ── -->`.
-- **Scrolling speed:** near the bottom, `const DRIFT_SPEED = 28;`
+- **Scrolling speed:** near the bottom, `const DRIFT_SPEED = 22;`
   (pixels per second; lower is slower).
 
 ## Covers without a link yet
