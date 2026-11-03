@@ -27,9 +27,9 @@ open a file and click the pencil icon to edit it in the browser.
 
 - **Reorder covers:** each cover is one line starting with
   `<a class="cover-link" …>`. Move lines up or down inside a row, or
-  between the four `ROW` blocks. The most important titles are spread
-  evenly across all four rows, alternating with lesser ones, because
-  visitors don't necessarily look at the top row first.
+  between the four `ROW` blocks. Rows 1 and 4 (the top row, and the row
+  next to the intro text) carry the strongest titles; rows 2 and 3 each
+  open with a highlight and hold most of the shorter texts.
 - **Change where a cover links:** edit the `href="…"` on that line.
 - **Text:** the Services, About and Contact sections are marked with
   comments such as `<!-- ── Services ── -->`.
