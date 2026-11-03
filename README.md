@@ -1,13 +1,17 @@
 # anthonymahler.ch
 
-The website of Anthony Mahler, translator and editor. It is a single page,
-`index.html`, with no build step: open it in a browser and it works.
+The website of Anthony Mahler, translator and editor: one page in English
+(`index.html`) and the same page in German (`de/index.html`). There is no build
+step: open either file in a browser and it works.
 
 ## What's where
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The whole site: text, layout and the scrolling cover bands |
+| `index.html` | The English page: text and the scrolling cover bands |
+| `de/index.html` | The German page (same layout, German text) |
+| `css/site.css`, `js/site.js` | Design and cover-band behaviour, shared by both pages |
+| `CNAME` | Tells GitHub Pages the site's domain, anthonymahler.ch |
 | `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by band and position |
 | `images/portrait.jpg` | Portrait for the About section |
 | `images/icons/`, `favicon.ico` | The ampersand browser-tab and home-screen icons |
@@ -17,8 +21,9 @@ The website of Anthony Mahler, translator and editor. It is a single page,
 
 ## Changing things
 
-All edits happen in `index.html`. On GitHub, open the file and click the
-pencil icon to edit it in the browser.
+Text and covers live in `index.html` and `de/index.html`. **Make every
+change in both files** (the cover lines are identical in both). On GitHub,
+open a file and click the pencil icon to edit it in the browser.
 
 - **Reorder covers:** each cover is one line starting with
   `<a class="cover-link" …>`. Move lines up or down inside a band, or
@@ -26,7 +31,7 @@ pencil icon to edit it in the browser.
 - **Change where a cover links:** edit the `href="…"` on that line.
 - **Text:** the Services, About and Contact sections are marked with
   comments such as `<!-- ── Services ── -->`.
-- **Scrolling speed:** near the bottom, `const DRIFT_SPEED = 22;`
+- **Scrolling speed:** in `js/site.js`, `const DRIFT_SPEED = 22;`
   (pixels per second; lower is slower).
 
 ## Covers without a link yet
