@@ -17,7 +17,7 @@ either file in a browser and it works.
 | `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by band and position |
 | `images/portrait.jpg` | Portrait for the About section |
 | `images/icons/`, `favicon.ico` | The ampersand browser-tab and home-screen icons |
-| `images/og-image.jpg` | The preview image shown when the link is shared |
+| `images/og-image-de.jpg`, `images/og-image.jpg` | The preview images (German, English) shown when the link is shared |
 | `robots.txt`, `sitemap.xml`, `llms.txt` | Help search engines and AI assistants find and describe the site |
 | `PROJECT-BRIEF.md` | The design brief |
 
