@@ -26,8 +26,10 @@ change in both files** (the cover lines are identical in both). On GitHub,
 open a file and click the pencil icon to edit it in the browser.
 
 - **Reorder covers:** each cover is one line starting with
-  `<a class="cover-link" …>`. Move lines up or down inside a band, or
-  between the four `BAND` blocks. Band 1 is the top row.
+  `<a class="cover-link" …>`. Move lines up or down inside a row, or
+  between the four `ROW` blocks. The most important titles are spread
+  evenly across all four rows, alternating with lesser ones, because
+  visitors don't necessarily look at the top row first.
 - **Change where a cover links:** edit the `href="…"` on that line.
 - **Text:** the Services, About and Contact sections are marked with
   comments such as `<!-- ── Services ── -->`.
