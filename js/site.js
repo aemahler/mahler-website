@@ -1,5 +1,5 @@
 // Pixels per second each band drifts. Lower is slower.
-const DRIFT_SPEED = 22;
+const DRIFT_SPEED = 17;
 
 const bands = document.querySelectorAll('.band');
 

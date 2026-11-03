@@ -33,7 +33,7 @@ open a file and click the pencil icon to edit it in the browser.
 - **Change where a cover links:** edit the `href="…"` on that line.
 - **Text:** the Services, About and Contact sections are marked with
   comments such as `<!-- ── Services ── -->`.
-- **Scrolling speed:** in `js/site.js`, `const DRIFT_SPEED = 22;`
+- **Scrolling speed:** in `js/site.js`, `const DRIFT_SPEED = 17;`
   (pixels per second; lower is slower).
 
 ## Covers without a link yet
