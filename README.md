@@ -1,15 +1,17 @@
 # anthonymahler.ch
 
-The website of Anthony Mahler, translator and editor: one page in English
-(`index.html`) and the same page in German (`de/index.html`). There is no build
-step: open either file in a browser and it works.
+The website of Anthony Mahler, translator and editor: one page in German
+(`index.html`, the main page at anthonymahler.ch) and the same page in English
+(`en/index.html`, at anthonymahler.ch/en/). There is no build step: open
+either file in a browser and it works.
 
 ## What's where
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The English page: text and the scrolling cover bands |
-| `de/index.html` | The German page (same layout, German text) |
+| `index.html` | The German page (main page): text and the scrolling cover bands |
+| `en/index.html` | The English page (same layout, English text) |
+| `de/index.html` | Forwards the old `/de/` address to the main page |
 | `css/site.css`, `js/site.js` | Design and cover-band behaviour, shared by both pages |
 | `CNAME` | Tells GitHub Pages the site's domain, anthonymahler.ch |
 | `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by band and position |
@@ -21,8 +23,9 @@ step: open either file in a browser and it works.
 
 ## Changing things
 
-Text and covers live in `index.html` and `de/index.html`. **Make every
-change in both files** (the cover lines are identical in both). On GitHub,
+Text and covers live in `index.html` (German) and `en/index.html` (English).
+**Make every change in both files.** The cover lines are the same in both,
+except that image paths in the English page start with `../`. On GitHub,
 open a file and click the pencil icon to edit it in the browser.
 
 - **Reorder covers:** each cover is one line starting with
