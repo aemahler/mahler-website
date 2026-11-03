@@ -250,7 +250,7 @@ span.cover-link { cursor: default; }
   color: var(--accent);
 }
 
-.publishers li { display: inline; }
+.publishers li { display: inline; white-space: nowrap; }  /* never split a name across lines */
 
 .publishers li:not(:last-child)::after {
   content: "·";
