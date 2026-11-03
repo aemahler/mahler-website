@@ -33,6 +33,7 @@ These covers are shown but not clickable because no publisher page has been
 set. To add one, change `<span class="cover-link">…</span>` on that line to
 `<a class="cover-link" href="LINK" target="_blank" rel="noopener">…</a>`.
 
+- *Vacillating Voices* (Frauke Berndt, diaphanes)
 - *Van Gogh and the Stars*
 - *Master/s*
 - *Vincenzo Bellini on Stage and Screen*
