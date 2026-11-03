@@ -10,7 +10,9 @@ The website of Anthony Mahler, translator and editor. It is a single page,
 | `index.html` | The whole site: text, layout and the scrolling cover bands |
 | `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by band and position |
 | `images/portrait.jpg` | Portrait for the About section |
-| `samples/` | PDF sample translations that some covers link to |
+| `images/icons/`, `favicon.ico` | The ampersand browser-tab and home-screen icons |
+| `images/og-image.jpg` | The preview image shown when the link is shared |
+| `robots.txt`, `sitemap.xml`, `llms.txt` | Help search engines and AI assistants find and describe the site |
 | `PROJECT-BRIEF.md` | The design brief |
 
 ## Changing things
@@ -41,29 +43,49 @@ set. To add one, change `<span class="cover-link">…</span>` on that line to
 - *What Images Do*
 - *Text as Source and Material in Contemporary Music Theatre*
 - caa.reviews
-- *Zeitschrift für Kunstgeschichte* 4.2019
-
-## Sample PDFs
-
-Some covers link to sample PDFs still hosted on the old Wix site
-(`https://www.anthonymahler.ch/_files/…`). Those links stop working once the
-domain moves. Before cancelling Wix, put the PDFs in `samples/` and point
-the covers' links there.
+- CIHA 2012 Nürnberg
 
 ## Putting it online (GitHub Pages, free)
 
-1. In this repository on GitHub, go to **Settings → Pages**.
+1. In this repository on GitHub, go to **Settings → Pages**. (GitHub Pages is
+   free for public repositories; a private one needs a paid plan, or can be
+   made public under **Settings → General**, at the bottom.)
 2. Under **Build and deployment**, choose **Deploy from a branch**, pick
    `main` and `/ (root)`, and save. After a minute the site is live at
    `https://aemahler.github.io/mahler-website/`.
 3. To use anthonymahler.ch: on the same page, enter `anthonymahler.ch` under
-   **Custom domain**. Then, at the company where the domain is registered,
-   set these DNS records (and remove the old Wix ones):
+   **Custom domain** and save. Then, wherever the domain is managed (if it
+   was bought through Wix, that is in the Wix dashboard under **Domains**),
+   replace the Wix DNS records with:
    - four `A` records for `@` pointing to `185.199.108.153`,
      `185.199.109.153`, `185.199.110.153` and `185.199.111.153`
    - one `CNAME` record for `www` pointing to `aemahler.github.io`
-4. Once the domain works, tick **Enforce HTTPS**.
+4. Once the domain works (this can take a few hours), tick **Enforce HTTPS**.
+5. Only then cancel the Wix site plan. If the domain itself is registered
+   with Wix, keep paying for the domain, or transfer it to another
+   registrar first.
 
-Before cancelling Wix, make sure every sample PDF has been copied into
-`samples/` and the covers point to it. Links that start with
-`https://www.anthonymahler.ch/_files/` stop working once the domain moves.
+The page's search and link-preview settings already use
+`https://anthonymahler.ch/` as the site's address, so previews show the
+picture once the domain points here.
+
+## Being found on Google and by AI assistants
+
+The page already carries what search engines and AI tools read: a clear
+title and description, a structured profile (name, location, languages,
+services), `sitemap.xml`, and `llms.txt`. After the domain is live:
+
+1. **Google Search Console** (search.google.com/search-console): add
+   `anthonymahler.ch`, verify it, and submit `https://anthonymahler.ch/sitemap.xml`.
+2. **Bing Webmaster Tools** (bing.com/webmasters): sign in, import the site from
+   Google Search Console. Bing also feeds ChatGPT and Copilot search.
+3. **Google Business Profile** (business.google.com): create a profile as a
+   translator in Basel. This is what puts you on Google Maps and in "translator
+   near me" results. A service-area business can hide its street address.
+4. **Link to the site from everywhere you have a profile:** University of Basel
+   staff page, LinkedIn, Academia.edu, Google Scholar, ORCID, and translator
+   directories such as ASTTI (Swiss association), DVÜD or ProZ. Links from
+   other sites are the strongest signal for search engines.
+5. **Ask past clients** (publishers, museums, authors) to credit and link you
+   where they can, for example in a book's online listing or a museum's
+   catalogue page.
