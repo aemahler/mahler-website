@@ -40,16 +40,8 @@ These covers are shown but not clickable because no publisher page has been
 set. To add one, change `<span class="cover-link">…</span>` on that line to
 `<a class="cover-link" href="LINK" target="_blank" rel="noopener">…</a>`.
 
-- *Vacillating Voices* (Frauke Berndt, diaphanes)
-- *Paramyth* (J.B. Metzler)
-- *Van Gogh and the Stars*
-- *Master/s*
-- *Vincenzo Bellini on Stage and Screen*
-- *Textile Terms: A Glossary*
-- *What Images Do*
-- *Text as Source and Material in Contemporary Music Theatre*
-- caa.reviews
 - CIHA 2012 Nürnberg
+- caa.reviews
 
 ## Putting it online (GitHub Pages, free)
 
