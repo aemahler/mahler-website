@@ -7,7 +7,7 @@
   --text-light: #6b6560;
   --accent: #2c2824;
   --rule: rgba(44, 40, 36, 0.18);
-  --band-height: 220px;
+  --band-height: clamp(220px, 13.5vw, 350px);   /* covers grow on wide screens so rows never repeat in view */
   --band-gap: 14px;
   --cover-gap: 14px;
   --scroll-speed: 60s;          /* fallback; JS sets a per-band duration */
