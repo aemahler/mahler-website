@@ -14,7 +14,7 @@ either file in a browser and it works.
 | `de/index.html` | Forwards the old `/de/` address to the main page |
 | `css/site.css`, `js/site.js` | Design and cover-band behaviour, shared by both pages |
 | `CNAME` | Tells GitHub Pages the site's domain, anthonymahler.ch |
-| `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by band and position |
+| `images/covers/` | Book covers, named `band1-01.jpg`, `band1-02.jpg`, … by row and position |
 | `images/portrait.jpg` | Portrait for the About section |
 | `images/icons/`, `favicon.ico` | The ampersand browser-tab and home-screen icons |
 | `images/og-image-de.jpg`, `images/og-image.jpg` | The preview images (German, English) shown when the link is shared |
@@ -30,9 +30,9 @@ open a file and click the pencil icon to edit it in the browser.
 
 - **Reorder covers:** each cover is one line starting with
   `<a class="cover-link" …>`. Move lines up or down inside a row, or
-  between the four `ROW` blocks. Rows 1 and 4 (the top row, and the row
-  next to the intro text) carry the strongest titles; rows 2 and 3 each
-  open with a highlight and hold most of the shorter texts.
+  between the three `ROW` blocks. Each row has an equal share of the
+  strongest titles, alternating with shorter texts, so whichever part of
+  the gallery a visitor looks at, a highlight is in view.
 - **Change where a cover links:** edit the `href="…"` on that line.
 - **Text:** the Services, About and Contact sections are marked with
   comments such as `<!-- ── Services ── -->`.
