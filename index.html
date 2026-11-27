@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anthony Mahler | Übersetzer Deutsch–Englisch und Lektor, Basel, Schweiz</title>
-<meta name="description" content="Übersetzer Deutsch–Englisch und Lektor für Englisch in Basel, Schweiz. Übersetzung und Lektorat für Geistes- und Sozialwissenschaften, Kunst und Kultur: Bücher, Ausstellungskataloge, wissenschaftliche Aufsätze und Förderanträge.">
+<meta name="description" content="Übersetzer Deutsch–Englisch und Lektor für Englisch in Basel, Schweiz. Übersetzung, Lektorat und Korrektorat für Geistes- und Sozialwissenschaften, Kunst, Museen und Kultur: Bücher, Ausstellungskataloge, wissenschaftliche Aufsätze und Förderanträge.">
 <link rel="canonical" href="https://anthonymahler.ch/">
 <link rel="alternate" hreflang="de" href="https://anthonymahler.ch/">
 <link rel="alternate" hreflang="en" href="https://anthonymahler.ch/en/">
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Übersetzung &amp; Lektorat von Anthony Mahler">
 <meta property="og:title" content="Übersetzung &amp; Lektorat von Anthony Mahler">
-<meta property="og:description" content="Übersetzer Deutsch–Englisch und Lektor für Englisch in Basel, Schweiz. Übersetzung und Lektorat für Geistes- und Sozialwissenschaften, Kunst und Kultur: Bücher, Ausstellungskataloge, wissenschaftliche Aufsätze und Förderanträge.">
+<meta property="og:description" content="Übersetzer Deutsch–Englisch und Lektor für Englisch in Basel, Schweiz. Übersetzung, Lektorat und Korrektorat für Geistes- und Sozialwissenschaften, Kunst, Museen und Kultur: Bücher, Ausstellungskataloge, wissenschaftliche Aufsätze und Förderanträge.">
 <meta property="og:url" content="https://anthonymahler.ch/">
 <meta property="og:image" content="https://anthonymahler.ch/images/og-image-de.jpg">
 <meta property="og:image:width" content="1200">
@@ -36,6 +36,36 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://anthonymahler.ch/#website",
+      "url": "https://anthonymahler.ch/",
+      "name": "Anthony Mahler",
+      "inLanguage": [
+        "de",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://anthonymahler.ch/#webpage",
+      "url": "https://anthonymahler.ch/",
+      "name": "Anthony Mahler | Übersetzer Deutsch–Englisch und Lektor, Basel, Schweiz",
+      "description": "Übersetzer Deutsch–Englisch und Lektor für Englisch in Basel, Schweiz. Übersetzung, Lektorat und Korrektorat für Geistes- und Sozialwissenschaften, Kunst, Museen und Kultur: Bücher, Ausstellungskataloge, wissenschaftliche Aufsätze und Förderanträge.",
+      "inLanguage": "de",
+      "isPartOf": {
+        "@id": "https://anthonymahler.ch/#website"
+      },
+      "about": {
+        "@id": "https://anthonymahler.ch/#service"
+      },
+      "mainEntity": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      }
+    },
     {
       "@type": "Person",
       "@id": "https://anthonymahler.ch/#anthony-mahler",
@@ -70,6 +100,32 @@
       "sameAs": [
         "https://scholar.google.com/citations?user=hvGzYhMAAAAJ",
         "https://unibas.academia.edu/AnthonyMahler"
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Übersetzer (Deutsch–Englisch)"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Lektor und Korrektor (Englisch)"
+        }
+      ],
+      "knowsAbout": [
+        "Kunstgeschichte",
+        "Kunsttheorie",
+        "Philosophie",
+        "Literaturwissenschaft",
+        "Germanistik",
+        "Musikwissenschaft",
+        "Theaterwissenschaft",
+        "Geschichte",
+        "Wissenschaftsgeschichte",
+        "Sozialwissenschaften",
+        "Museums- und Ausstellungstexte",
+        "Wissenschaftliche Übersetzung",
+        "Lektorat",
+        "Korrektorat"
       ]
     },
     {
@@ -90,6 +146,18 @@
         "addressCountry": "CH"
       },
       "areaServed": [
+        {
+          "@type": "City",
+          "name": "Basel"
+        },
+        {
+          "@type": "City",
+          "name": "Zürich"
+        },
+        {
+          "@type": "City",
+          "name": "Bern"
+        },
         {
           "@type": "Country",
           "name": "Switzerland"
@@ -116,52 +184,215 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Translation, German to English",
-              "description": "Translation of books, exhibition catalogues, scholarly essays, journal articles, and grant applications in the humanities, social sciences, arts, and culture."
+              "name": "Übersetzung Deutsch–Englisch",
+              "description": "Übersetzung von Büchern, Ausstellungskatalogen, wissenschaftlichen Aufsätzen, Zeitschriftenartikeln und Förderanträgen aus Geistes- und Sozialwissenschaften, Kunst und Kultur."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Developmental editing",
-              "description": "Structure, presentation, and sources of a manuscript."
+              "name": "Inhaltliches Lektorat",
+              "description": "Aufbau, Darstellung und Quellen eines Manuskripts."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Line editing",
-              "description": "Word choice, phrasing, and style at the sentence level."
+              "name": "Stilistisches Lektorat",
+              "description": "Wortwahl, Formulierung und Stil auf Satzebene."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Copyediting",
-              "description": "Consistency, accuracy, and house style before publication."
+              "name": "Korrektorat",
+              "description": "Einheitlichkeit, Genauigkeit und Hausstil vor der Veröffentlichung."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Proofreading",
-              "description": "Final check of typeset proofs before publication."
+              "name": "Fahnenkorrektur",
+              "description": "Letzte Durchsicht der gesetzten Fahnen vor dem Druck."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Editing of nonnative English and machine translation",
-              "description": "Careful editing of English-language manuscripts by nonnative authors and of machine translations."
+              "name": "Lektorat englischer Texte von Nicht-Muttersprachlern und maschineller Übersetzungen",
+              "description": "Sorgfältiges Lektorat englischsprachiger Manuskripte nicht muttersprachlicher Autorinnen und Autoren sowie maschineller Übersetzungen."
             }
           }
         ]
-      }
+      },
+      "serviceType": [
+        "Übersetzung",
+        "Wissenschaftliche Übersetzung",
+        "Lektorat",
+        "Korrektorat",
+        "Fahnenkorrektur"
+      ],
+      "knowsAbout": [
+        "Kunstgeschichte",
+        "Kunsttheorie",
+        "Philosophie",
+        "Literaturwissenschaft",
+        "Germanistik",
+        "Musikwissenschaft",
+        "Theaterwissenschaft",
+        "Geschichte",
+        "Wissenschaftsgeschichte",
+        "Sozialwissenschaften",
+        "Museums- und Ausstellungstexte",
+        "Wissenschaftliche Übersetzung",
+        "Lektorat",
+        "Korrektorat"
+      ],
+      "availableLanguage": [
+        "de",
+        "en"
+      ]
+    },
+    {
+      "@type": "Book",
+      "name": "Vacillating Voices: Generic Ambiguity in Modern German Literature",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "diaphanes"
+      },
+      "datePublished": "2027",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Frauke Berndt"
+      },
+      "url": "https://press.uchicago.edu/ucp/books/book/distributed/V/bo290914559.html"
+    },
+    {
+      "@type": "Book",
+      "name": "Opera in Performance: Analyzing the Performative Dimension of Opera Productions",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Routledge"
+      },
+      "datePublished": "2022",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Clemens Risi"
+      },
+      "url": "https://www.routledge.com/Opera-in-Performance-Analyzing-the-Performative-Dimension-of-Opera-Productions/Risi/p/book/9780367645021"
+    },
+    {
+      "@type": "Book",
+      "name": "Facing Poetry: Alexander Gottlieb Baumgarten’s Theory of Literature",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "De Gruyter"
+      },
+      "datePublished": "2020",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Frauke Berndt"
+      },
+      "url": "https://www.degruyter.com/document/doi/10.1515/9783110624519/html"
+    },
+    {
+      "@type": "Book",
+      "name": "The Passion of Images",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Verlag der Buchhandlung Walther König"
+      },
+      "datePublished": "2024",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gottfried Boehm"
+      },
+      "url": "https://www.artbook.com/9783960987727.html"
+    },
+    {
+      "@type": "Book",
+      "name": "Why Italy Was for Europe: On the History of the 1989 Advisory Referendum",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Schwabe"
+      },
+      "datePublished": "2020",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Georg Kreis"
+      },
+      "url": "https://schwabe.ch/Georg-Kreis-Why-Italy-Was-for-Europe-978-3-7965-4264-0"
+    },
+    {
+      "@type": "Book",
+      "name": "Walter Moroder: Figures of Presence and Absence",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hatje Cantz"
+      },
+      "datePublished": "2026",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "url": "https://hatjecantz.com/products/84047-walter-moroder-figures-of-presence-and-absence"
+    },
+    {
+      "@type": "Book",
+      "name": "James Howell: Painting",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hatje Cantz"
+      },
+      "datePublished": "2026",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "url": "https://www.hatjecantz.com/collections/all/products/67016-james-howell-painting-malerei"
+    },
+    {
+      "@type": "Book",
+      "name": "Sehen",
+      "inLanguage": "en",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kann Verlag"
+      },
+      "datePublished": "2023",
+      "translator": {
+        "@id": "https://anthonymahler.ch/#anthony-mahler"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gottfried Boehm"
+      },
+      "url": "https://www.kann-verlag.de/newrelease_SEHEN_2023.html"
     }
   ]
 }
@@ -265,9 +496,10 @@
   </div>
 
   <!-- ── Services ── -->
-  <section class="section" id="services" aria-label="Leistungen">
+  <section class="section" id="services" aria-labelledby="services-title">
     <p class="eyebrow"><span class="num">01</span>Leistungen</p>
     <div class="section-body">
+      <h2 class="visually-hidden" id="services-title">Übersetzung und Lektorat: Leistungen</h2>
       <div class="services">
         <article class="service">
           <h3>Übersetzung</h3>
@@ -295,6 +527,8 @@
           </ul>
         </article>
       </div>
+
+      <p class="fields"><span class="fields-label">Fachgebiete</span> Kunstgeschichte und Kunsttheorie, Philosophie, Literaturwissenschaft, Musik- und Theaterwissenschaft, Geschichte und Wissenschaftsgeschichte, Sozialwissenschaften sowie Museums- und Ausstellungstexte</p>
 
       <p class="process">In der Regel beginne ich mit einer Probeübersetzung von zwei bis drei Seiten, damit wir sehen, ob die Zusammenarbeit passt.</p>
     </div>
